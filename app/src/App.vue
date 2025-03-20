@@ -1,12 +1,23 @@
 <template>
-  <BarChart />
+  <div id="app">
+    <PieChartComponent />
+  </div>
 </template>
 
 <script>
-import BarChart from 'path/to/component/BarChart'
+import PieChartComponent from './components/BarChart.vue';
 
 export default {
   name: 'App',
-  components: { BarChart }
-}
+  components: {
+    PieChartComponent,
+  },
+};
 </script>
+
+<style>
+
+#app {
+  text-align: center;
+}
+</style>
