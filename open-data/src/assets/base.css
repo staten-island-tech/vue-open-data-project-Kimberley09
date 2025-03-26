@@ -1,52 +1,14 @@
-
 :root {
   --color-white: #ffffff;
   --color-black: #181818;
   --color-indigo: #2c3e50;
-  --color-divider: rgba(60, 60, 60, 0.12);
   --color-highlight: hsla(160, 100%, 37%, 1);
-
-
-  --color-background: var(--color-white);
-  --color-background-dark: #222222;
-
-
-  --color-text: var(--color-indigo);
-  --color-text-muted: rgba(60, 60, 60, 0.66);
-}
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  color: var(--color-text);
-  background: var(--color-background);
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-highlight);
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--color-highlight);
-  background: rgba(60, 179, 113, 0.1);
+  margin: 0;
+  padding: 0;
+  color: var(--color-indigo);
+  background-color: var(--color-white);
 }

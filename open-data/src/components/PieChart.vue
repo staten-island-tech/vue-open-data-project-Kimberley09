@@ -1,20 +1,16 @@
-<script>
+<template>
+  <Pie :data="chartData" :options="chartOptions" />
+</template>
+
+<script setup>
 import { Pie } from 'vue-chartjs';
-import { Chart as ChartJS, Title, Tooltip, Legend, CategoryScale } from 'chart.js';
+import { Chart as ChartJS, Title, Tooltip, Legend } from 'chart.js';
 
-ChartJS.register(Title, Tooltip, Legend, CategoryScale);
+ChartJS.register(Title, Tooltip, Legend);
 
-export default {
-  props: ['chartData'],
-  components: { Pie },
-  data() {
-    return {
-      options: { responsive: true }
-    };
-  }
+defineProps(['chartData']);
+
+const chartOptions = {
+  responsive: true,
 };
 </script>
-
-<template>
-  <Pie :data="chartData" :options="options" />
-</template>
