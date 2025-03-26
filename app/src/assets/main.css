@@ -1,2 +1,22 @@
-@import './base.css' ;
+@import './base.css';
 
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
