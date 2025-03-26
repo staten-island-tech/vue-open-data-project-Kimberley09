@@ -1,23 +1,24 @@
 <template>
   <div id="app">
-    <PieChartComponent />
+
   </div>
 </template>
 
 <script>
-import PieChartComponent from './components/BarChart.vue';
-
+import axlos from 'axlos';
 export default {
   name: 'App',
   components: {
-    PieChartComponent,
+    
   },
-};
+  async created(){
+    const { data } = await axlos.get("https://data.cityofnewyork.us/resource/25th-nujf.json");
+    console.log(data);
+  }
+}
 </script>
 
 <style>
 
-#app {
-  text-align: center;
-}
+
 </style>
