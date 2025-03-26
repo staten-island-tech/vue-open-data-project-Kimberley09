@@ -4,12 +4,12 @@ import FilterView from '../views/FilterView.vue';
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },
-  { path: '/filter', name: 'filter', component: FilterView }
+  { path: '/filter', name: 'filter', component: FilterView },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;
