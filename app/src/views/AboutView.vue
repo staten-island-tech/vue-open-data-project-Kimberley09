@@ -1,15 +1,22 @@
 <template>
-  <div class="about">
-    <h1>Project</h1>
+  <div>
+    <h1>Baby year</h1>
+    <BarChart/>
   </div>
 </template>
 
 <script setup>
+import BarChart from '@/components/BarChart.vue';
 </script>
 
 <style scoped>
-.about {
+h1 {
   text-align: center;
-  margin: 2rem auto;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
 }
 </style>

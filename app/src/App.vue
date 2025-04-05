@@ -6,9 +6,7 @@
     <main>
       <router-view />
     </main>
-    <footer>
-      <p>&copy; 2025 Baby Names Insights. All rights reserved.</p>
-    </footer>
+
   </div>
 </template>
 
